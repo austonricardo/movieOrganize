@@ -19,7 +19,8 @@ ruby c:\desenv\ror\organizemov.rb c:\minhapastadedonwloadsdessorganizada\
 O resultado desse comando será copiar os arquivos *.mkv, *.mp4, *.avi da pasta c:\minhapastadedonwloadsdessorganizada\ para 
 a unidade e:\
 
-Para Começar
+Para Começar:
+
 1-veja os passos para instalar a gem que baixa as legendas
 https://github.com/byroot/ruby-osdb
 
