@@ -28,3 +28,4 @@ https://github.com/byroot/ruby-osdb
 
 3-crie uma pasta chamada filmes no seu hd externo (e:\filmes)
 
+Dica: para evitar que downloads não terminados sejam processados, eu ativo no meu torrent client uma opção para adicionar uma extensão para arquivos não finalizados.
