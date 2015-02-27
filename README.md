@@ -23,6 +23,7 @@ Para Começar
 1-veja os passos para instalar a gem que baixa as legendas
 https://github.com/byroot/ruby-osdb
 
-2-Altere o script movieOrganize.rb e legendar.bat para utilizar sua unidade de HD externo.(e:\) e o caminho de sua pasta de downloads
-no arquivo legendar.bat
+2-Altere o script movieOrganize.rb e legendar.bat para utilizar sua unidade de HD externo.(e:\) e o caminho de sua pasta de downloads no arquivo legendar.bat
+
+3-crie uma pasta chamada filmes no seu hd externo (e:\filmes)
 
