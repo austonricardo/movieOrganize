@@ -1,3 +1,3 @@
-ruby c:\desenv\ror\organizemov.rb c:\media\series\
-ruby c:\desenv\ror\organizemov.rb c:\media\filmes\ 
-getsub e:\ -a -l pob
+ruby c:\desenv\ror\organizemov2.rb c:\media\
+getsub e:\movies -a -l pob
+getsub e:\tvshows -a -l pob
