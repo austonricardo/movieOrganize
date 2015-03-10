@@ -6,7 +6,7 @@ require 'fileutils'
 class OrganizeMov
 	ACCEPTED_MEDIA_FORMATS = [".mkv", ".mp4", ".avi"]
 	TV_SHOWS = ["mentalist", "theory", "thrones","flash","gotham"]
-	IGNORE_LIST = ["sample","rarbg.com","etrg"]
+	IGNORE_LIST = ["sample","rarbg.com","etrg.mp4"]
 	DIR_OUTPUT = "e:\\"
 	def procdir(path, matches)
 		
@@ -30,7 +30,6 @@ class OrganizeMov
 			extn = File.extname  file        # => ".mp4"
 			name = File.basename file, extn  # => "xyz"
 			path = File.dirname  file        # => "/path/to"
-			subt = file[0..-4] + 'srt'
 			ignore = false
 			IGNORE_LIST.each do |ign|
 				if name.downcase.include? ign then
@@ -42,6 +41,7 @@ class OrganizeMov
 			if ignore then
 				puts 'ignore: ' + name
 			else
+				san_name = sanitize_filename(name)
 				tv_show = false
 				season_epi = ""
 				show_name = ""
@@ -49,7 +49,7 @@ class OrganizeMov
 				
 				TV_SHOWS.each do |ts|
 					#puts ts + ' ' + name.downcase
-					parts = name.downcase.split('.')
+					parts = san_name.split('.')
 					index = parts.index(ts)
 					#puts index.inspect
 					if index then
@@ -67,9 +67,12 @@ class OrganizeMov
 					break unless tv_show == false
 
 				end
-				new_filename = DIR_OUTPUT + 'filmes\\'+ name.gsub(' ','.').downcase
+				
+				Dir.mkdir(DIR_OUTPUT + 'movies\\') unless File.exists?(DIR_OUTPUT + 'movies\\')
+				Dir.mkdir(DIR_OUTPUT + 'tvshows\\') unless File.exists?(DIR_OUTPUT + 'tvshows\\')
+				new_filename = DIR_OUTPUT + 'movies\\'+ san_name
 				if tv_show then
-					dir_show = DIR_OUTPUT + show_name + '\\'
+					dir_show = DIR_OUTPUT + 'tvshows\\' + show_name + '\\'
 					Dir.mkdir(dir_show) unless File.exists?(dir_show)
 					new_filename= dir_show+(show_name+'.'+season_epi+'.'+show_release).gsub(' ', '.')
 				end
@@ -78,7 +81,12 @@ class OrganizeMov
 			end
 		end
 	end
-
+	
+	def sanitize_filename(name)
+		# Strip out the non-ascii character
+		name.downcase.gsub(/[^0-9a-z.]/, ' ').gsub(/ +/,'.')
+	end
+  
 end
 
 OrganizeMov.new.run!(ARGV[0]) 
