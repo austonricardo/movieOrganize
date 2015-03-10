@@ -1,11 +1,9 @@
 # movieOrganize
 
 Descrição e História
-Decidi a voltar a assistir algumas series(TV Shows) que não acompanhava há algum tempo e para facilitar a organização de filmes e series
-e baixar suas respectivas legendas fiz o seguinte script.
+Decidi a voltar a assistir algumas series(TV Shows) que não acompanhava há algum tempo e para facilitar a organização de filmes e series e baixar suas respectivas legendas fiz o seguinte script.
 
-Esse script organiza os filmes e series que estão na sua pasta desorganizada de downloads, copiando-os para seu HD externo em uma
-estrutura organizada.
+Esse script organiza os filmes e series que estão na sua pasta desorganizada de downloads, copiando-os para seu HD externo em uma estrutura organizada.
 
 O caminho do HD externo está fixo no script e no .bat (e:\)
 
@@ -25,7 +23,5 @@ Para Começar:
 https://github.com/byroot/ruby-osdb
 
 2-Altere o script movieOrganize.rb e legendar.bat para utilizar sua unidade de HD externo.(e:\) e o caminho de sua pasta de downloads no arquivo legendar.bat
-
-3-crie uma pasta chamada filmes no seu hd externo (e:\filmes)
 
 Dica: para evitar que downloads não terminados sejam processados, eu ativo no meu torrent client uma opção para adicionar uma extensão para arquivos não finalizados.
