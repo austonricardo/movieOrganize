@@ -13,7 +13,9 @@ O arquivo org.bat parametriza a chamada para outros scripts ruby que organizam o
 PASSOS PARA UTILIZAR
 
 1-Instale o Ruby:
+
  a-baixar o instalador de http://rubyinstaller.org/downloads
+ 
  b-Marcar opção de adicionar ao path os comanndo do ruby
  
 2-Instalar plugin do ruby para legendas
