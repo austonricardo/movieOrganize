@@ -20,9 +20,9 @@ PASSOS PARA UTILIZAR
  
 2-Instalar plugin do ruby para legendas:
 
-   a-Iniciar um terminal(cmd)
+    a-Iniciar um terminal(cmd)
 
-   b-entrar o comando: gem install osdb
+    b-entrar o comando: gem install osdb
 
 3-Altere o script org.bat, em qualquer editor de texto, para utilizar sua unidade de HD externo.(e:\) e o caminho de sua pasta de downloads.
 
