@@ -30,9 +30,11 @@ PASSOS PARA UTILIZAR
 
 4-Agora basta executar o org.bat sempre que quiser organizar novos downloads no hd externo.
 
-Dica 1: para evitar que downloads não terminados sejam processados, eu ativo no meu torrent client uma opção para adicionar uma extensão para downloads não finalizados.
+DICAS
 
-Dica 2: Antes de apagar o arquivo do hd remova ele primeiro da pasta de downloads, para evitar que seja copiado novamente.
+    a-Para evitar que downloads não terminados sejam processados, eu ativo no meu torrent client uma opção para adicionar uma extensão para downloads não finalizados.
 
-Dica 3: Para mais informaçoes sobre o o utilitário que baixa as legendas, veja https://github.com/byroot/ruby-osdb
+    b-Antes de apagar o arquivo do hd remova ele primeiro da pasta de downloads, para evitar que seja copiado novamente.
+
+    c-Para mais informaçoes sobre o o utilitário que baixa as legendas, veja https://github.com/byroot/ruby-osdb
 
