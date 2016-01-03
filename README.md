@@ -1,27 +1,27 @@
 # movieOrganize
 
-Descrição e História
-Decidi a voltar a assistir algumas series(TV Shows) que não acompanhava há algum tempo e para facilitar a organização de filmes e series e baixar suas respectivas legendas fiz o seguinte script.
+História
+Decidi a voltar a assistir algumas series(TV Shows) que não acompanhava há algum tempo e para facilitar a organização de filmes e series e baixar suas respectivas legendas fiz esse script.
 
+Descrição
 Esse script organiza os filmes e series que estão na sua pasta desorganizada de downloads, copiando-os para seu HD externo em uma estrutura organizada.
 
-O caminho do HD externo está fixo no script e no .bat (e:\)
+O caminho do HD externo deve ser definido no arquivo .bat por exemplo(e:\)
 
-O arquivo lengendar.bat na verdade, executa o script para organiza os filmes e series no hd externo (e:\) e depois chama
-o utilitario getsub para legendar o conteúdo que já está organizado. Esse utilitário não é 100% ao baixar e acertar a 
-legenda automaticamente mas acerta em cerca de 90% nos meus experimentos.
+O arquivo org.bat parametriza a chamada para outros scripts ruby que organizam os filmes e series no hd externo (e:\) e depois baixa suas respeccivas legendas por meio do utilitário getsub.
 
-Modo de usar:
-ruby c:\desenv\ror\organizemov.rb c:\minhapastadedonwloadsdessorganizada\
+1-Instale o Ruby:
+ a-baixar o instalador de http://rubyinstaller.org/downloads
+ b-Marcar op��o de adicionar ao path os comanndo do ruby
+ 
+2-Instalar plugin do ruby para legendas
+a-Iniciar um terminal(cmd) e entrar o comando 
+   gem install osdb
 
-O resultado desse comando será copiar os arquivos *.mkv, *.mp4, *.avi da pasta c:\minhapastadedonwloadsdessorganizada\ para 
-a unidade e:\
+OBS:para mais informa�oes veja https://github.com/byroot/ruby-osdb
 
-Para Começar:
-
-1-veja os passos para instalar a gem que baixa as legendas
-https://github.com/byroot/ruby-osdb
-
-2-Altere o script movieOrganize.rb e legendar.bat para utilizar sua unidade de HD externo.(e:\) e o caminho de sua pasta de downloads no arquivo legendar.bat
+3-Altere o script org.bat para utilizar sua unidade de HD externo.(e:\) e o caminho de sua pasta de downloads.
 
 Dica: para evitar que downloads não terminados sejam processados, eu ativo no meu torrent client uma opção para adicionar uma extensão para arquivos não finalizados.
+
+4-Agora basta executar o org.bat sempre que quiser organizar novos downloads no hd externo.
