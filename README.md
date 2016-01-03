@@ -10,7 +10,7 @@ Esse script organiza os filmes e series que estão na sua pasta desorganizada de
 
 O caminho do HD externo deve ser definido no arquivo org.bat por exemplo(e:\)
 
-O arquivo org.bat parametriza a chamada para outros scripts ruby que organizam os filmes e series no hd externo (e:\) e depois baixa suas respeccivas legendas por meio do utilitário getsub.
+O arquivo org.bat parametriza a chamada para outros scripts ruby que organizam os filmes e series no hd externo (e:\) e depois baixa suas respecTivas legendas por meio do utilitário getsub.
 
 PASSOS PARA UTILIZAR
 
