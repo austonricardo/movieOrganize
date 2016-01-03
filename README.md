@@ -1,9 +1,11 @@
 # movieOrganize
 
-História
+HISTÓRIA
+
 Decidi a voltar a assistir algumas series(TV Shows) que não acompanhava há algum tempo e para facilitar a organização dessas series e de alguns filmes e já baixar suas respectivas legendas fiz esse script.
 
-Descrição
+DESCRIÇÃO
+
 Esse script organiza os filmes e series que estão na sua pasta desorganizada de downloads, copiando-os para seu HD externo em uma estrutura organizada.
 
 O caminho do HD externo deve ser definido no arquivo org.bat por exemplo(e:\)
